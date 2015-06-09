@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Welcome to Petting Area :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="Xuyang Gao, James">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:900,500,900italic,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel=stylesheet href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css"> 
+  <link rel=stylesheet href="css/gmenu.css">
+ <!-- Printer CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link type="text/css" rel="stylesheet" href="/css/printer.css" media="print" />
+	
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+	
+	
+  <!-- Js library
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
+    
+	
+<script src="./js/initlizeData.js"></script>	
+	
+<script src="./js/jquery-2.1.3.min.js"></script>
+<script src="/js/animatescroll.js"></script>
+<script src="./js/gmenu.js"></script>
+	
+	
+<script src="./js/initlizeData.js"></script>	
+<script src="/js/angular.js"></script>
+<script src="/js/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-sanitize.js"></script>
+<script src="./js/site/main.js"></script>
+
+   
+<link rel="stylesheet" href="./bootstrap/bootstrap-3.3.4/css/bootstrap.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+		
+	<script>
+		$(document).ready( function() {
+			
+    		$("#gmenu").gmenu({
+				datasource:menudata,
+				menumargin:"0",
+				menutextalign:"center",
+				topmenufloat:"left",
+				padview:{
+					initwidth:"400"},				  
+				mobileview:{
+					initwidth:"400"
+				}
+			});
+		});
+	</script>
+
+	
+	
+	
+</head>
+<body ng-app="fewdproject">
+
+	<header ng-controller="header_footer">
+				<div  ng-include="'./template/header.html'"></div>
+	</header>
+<!-- Nav End
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<nav>
+		<div class="container">
+						<div class="row">
+							<div class="col-md-12"  >
+								<div id="gmenu" style="margin-bottom:10px"></div>
+							</div>
+						 </div>
+		</div>
+	</nav>
+<!-- Primary Page Layout 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	
+
+<main>	
+	
+	<section class="container">
+		<form method="post" action="#">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<ul >
+					<li>
+						 If you are interested in our licensed and insured pet sitting services, doggie daycare, pet taxi or dog walking services, please feel free to call me at (858) 200-6600, fill out the pet sitting request form or email me directly at <a href="mailto:petcare@northcountypetsitting.com">petcare@northcountypetsitting.com </a> 
+					</li>
+				</ul>
+			</div>
+			
+			<div class="form col-md-4">
+				
+				<ul >
+					<li>Your First Name</li>
+					<li><input name="firstname" type="text" required></li>
+				</ul> 
+			</div>
+			
+			<div class="form col-md-4">
+				
+				<ul >
+					<li>Your Last Name</li>
+					<li><input name="lastname" type="text" required></li>
+				</ul> 
+			</div>
+			
+			<div class="form col-md-4">
+				
+				<ul >
+					<li>Street Address</li>
+					<li><input name="address" type="text" required></li>
+				</ul> 
+			</div>
+			<div class="form col-md-4">
+				
+				<ul >
+					<li>Zip Code</li>
+					<li><input name="zipcode" type="text" required></li>
+				</ul> 
+			</div>
+			
+			<div class="form col-md-4">
+				
+				<ul >
+					<li>Telephone Number</li>
+					<li><input name="tele" type="tel" required></li>
+				</ul> 
+			</div>
+			<div class="form col-md-4">
+				
+				<ul >
+					<li>Cell Phone</li>
+					<li><input name="cellphone" type="tel" required></li>
+				</ul> 
+			</div>
+			
+			
+			<div class="form col-md-8 col-md-offset-4">	
+				<ul >
+					<li>Email</li>
+					<li><input name="email" type="email" required></li>
+				</ul> 
+			</div>
+			
+		 
+			<div class="form col-md-8 col-md-offset-4">
+				
+				<ul class="radio">
+					<li>Preferred communication method? (radio buttons) </li>
+					<li>
+						<input name="radio" type="radio" required>Phone</input>
+					</li>
+					<li>
+						<input name="radio" type="radio" required>Cell Phone</input>
+					</li>
+					<li>
+						<input name="radio" type="radio" required>E-mail</input>
+					</li>
+					<li>
+						<input name="radio" type="radio" required>Text Message</input>
+					</li>
+				</ul> 
+			</div>
+
+	 
+			<div class="form col-md-8 col-md-offset-4">
+				<ul class="selects">
+					<li>How many pets do you have?</li>
+					<li>Dogs
+						<select>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>4+</option>
+						</select>
+					Cats
+						<select>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>4+</option>
+						</select>
+					</li>
+				</ul> 
+			</div>
+ 
+			<div class="form col-md-8 col-md-offset-4">	
+				<ul class="datepicker">
+					<li>Date Requested</li>
+					<li>
+						<ul>
+							<li>From:</li>
+							<li><input type="date"></li>
+							<li>To:</li>
+							<li><input type="date"></li>
+						</ul>
+					</li>
+				</ul> 
+			</div>
+
+		<div class="form col-md-8 col-md-offset-4">	
+				<ul  class="servicesreq">
+					<li>Services Requested</li>
+					<li>
+						<ul>
+							<li><input type="checkbox">Dog Walking</input></li>
+							<li><input type="checkbox">Doggie Daycare</input></li>
+							<li><input type="checkbox">Cat Sitting</input></li>
+							<li><input type="checkbox">Overnight</input></li>
+							<li><input type="checkbox">Boarding</input></li>
+							<li><input type="checkbox">Pet Taxi</input></li>
+						</ul>
+					</li>
+				</ul> 
+			</div>
+
+		<div class="form col-md-8 col-md-offset-4">	
+				<ul  class="contactyou">
+					<li>Best time to contact you</li>
+					<li>
+						<input type="text">
+					</li>
+				</ul> 
+			</div>
+
+			<div class="form col-md-8 col-md-offset-4">	
+				<ul>
+					<li>Tell us a little more about your pet(s) (name, special needs, medications)</li>
+					<li>
+						<textarea rows="8"  ></textarea>
+					</li>
+				</ul> 
+			</div>
+
+<div class="form col-md-8 col-md-offset-4">	
+				<ul class="formbtn">
+					<li><input type="submit" value="Submit"> </li>
+					<li><input type="button" value="Clear"></li>
+				</ul> 
+			</div>
+
+		</div>
+</form>
+	</section>
+	
+	</main>
+	
+	
+	
+
+<!-- Primary Page Layout End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	
+	<footer ng-controller="header_footer">
+		<div ng-include="footerurl"></div>
+	</footer>
+  
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
