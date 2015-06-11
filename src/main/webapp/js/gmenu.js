@@ -121,11 +121,11 @@ function initlizeSelectEvent(){
 function getMenu(data){
 	var html="";
 	$.each( data, function( i,obj ) {
-   		html=html+"<li><a href='"+obj.url+"'>"+obj.title+"</a>";
+   		html=html+"<a href='"+obj.url+"'><li>"+obj.title;
 		if(obj.submenu!=null){
 			html=html+getMenu(obj.submenu);
 		}
-		html=html+"</li>";
+		html=html+"</li></a>";
  		
 	});
 	html="<ul>"+html+"</ul>"
@@ -149,14 +149,18 @@ function initlizeMenu(settings){
 				-10
 		);
 	
-		$("#gmenu>ul li").css("width",unitewidth);
-		//$("#gmenu>ul>li").css("min-width","auto");
-		$("#gmenu>ul li").css("margin",settings.menumargin+"px");
-		$("#gmenu>ul li").css("padding",settings.menupadding+"px");
-		$("#gmenu>ul>li").css("float",settings.topmenufloat);
-		$("#gmenu>ul>li li").css("margin","-"+settings.menuborder+"px");
+//		//$("#gmenu>ul li").css("width",unitewidth);
+//		$("#gmenu>ul>a>li").css("width",unitewidth);
+//		//$("#gmenu>ul>li").css("min-width","auto");
+//		$("#gmenu>ul li").css("margin",settings.menumargin+"px");
+//		$("#gmenu>ul li").css("padding",settings.menupadding+"px");
+//		$("#gmenu>ul>li").css("float",settings.topmenufloat);
+//		$("#gmenu>ul>li li").css("margin","-"+settings.menuborder+"px");
+//	
+//		$("#gmenu>ul li").css("text-align",settings.menutextalign);
 	
-		$("#gmenu>ul li").css("text-align",settings.menutextalign);
+	
+	
 		$("#gmenu>ul ul").hide();
 	
 }

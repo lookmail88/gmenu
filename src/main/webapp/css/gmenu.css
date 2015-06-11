@@ -8,7 +8,7 @@
 						z-index: 1000;
 					}
 
-
+ 
 #gmenu 				{
 						margin: 0 auto; 
 						text-align: left;
@@ -18,8 +18,8 @@
 						 
 				
 					}
-#gmenu ul			{
-					 
+#gmenu ul>a			{
+				float: left;
 }
 #gmenu a 			{
 					 
